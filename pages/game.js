@@ -5,7 +5,7 @@ let currentQuestion = {};
 let correctAns = true;
 let score = 0;
 let questionCounter = 0;
-let availableQs = [];
+let availableQuestion = [];
 
 let questions = [
     {
@@ -74,20 +74,26 @@ let questions = [
 ]
 
 const correctBonus = 10;
-const maxQs = 7;
+const maxQuestions = 7;
 
 startGame = () => {
-    questionCounter=0;
-    score=0;
-    availableQs = [...questions];
-    console.log(availableQs);
-    getNewQs();
+    questionCounter = 0;
+    score = 0;
+    availableQuestion = [...questions];
+    console.log(availableQuestion);
+    getNewQuestion();
 };
 
-getNewQs = () => {
-
+getNewQuestion = () => {
     questionCounter++;
-    
-}
+   const questionIndex = Math.floor(Math.random() * availableQuestion.length);
+   currentQuestion = availableQuestion[questionIndex];
+   question.innerText = currentQuestion.question;
+
+   choices.forEach( choice => {
+       const number = choice.dataset['number'];
+       choice.innerText = currentQuestion['choice' + number];
+   })
+};
 
 startGame();
