@@ -105,14 +105,23 @@ getNewQuestion = () => {
 
 choices.forEach(choice => {
     choice.addEventListener("click", e => {
-        // console.log(e.target);
         if(!correctAns)return;
 
         correctAns = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
-        console.log(selectedAnswer);
-        getNewQuestion();
+
+        const classApply = 
+            selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+
+        selectedChoice.parentElement.classList.add(classApply);
+
+        setTimeout( () => {
+            selectedChoice.parentElement.classList.remove(classApply);
+            getNewQuestion();
+        }, 1000)
+
+        
 
     });
 });
