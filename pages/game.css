@@ -24,6 +24,7 @@
 
 .choice-text {
     padding: 1.5rem;
+    width: 100%;
 }
 
 .correct {
@@ -32,4 +33,15 @@
 
 .incorrect {
     background-color: red;
+}
+
+#hud {
+    margin-top: 10rem;
+    display:flex;
+    justify-content: space-around;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
 }
