@@ -1,6 +1,6 @@
 /* sets background color for app */
 :root {
-    background-color: rgb(109, 89, 122);
+    background-color: rgb(114, 61, 70);
 }
 
 /* applies styling for text color, margin, padding */
@@ -9,7 +9,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    color:w
 }
 
 /* gives margin bottom */
@@ -23,7 +22,8 @@ h4 {
 /* styles font size, color and margin bottom */
 h1 {
     font-size: 3.4rem;
-    color: rgb(255, 255, 255);
+    color: rgb(58, 64, 66);
+    font-weight: 150rem;
 }
 
 /* */
@@ -42,12 +42,12 @@ h2 {
 /* styles header with size and weight */
 h3 {
     font-size: 2.8rem;
-    color: whitesmoke;
+    color: white;
     margin-bottom: 2rem;
 }
 
 main {
-    height: 200px;
+    height: 150px;
     width: 80%;
     background-image: url(./Assets/banner.png);
     background-size: cover;
@@ -69,14 +69,14 @@ main {
 }
 
 .info {
-    color: wheat;
+    color: rgb(255, 255, 255);
     font-size: 1.7rem;
-    font-weight: 75rem;
     margin: auto;
 }
 
 li {
     margin-bottom: 1rem;
+    font-weight: 100rem;
 }
 
 .title {

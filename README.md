@@ -25,4 +25,4 @@ As a coding boot camp student I want to take a timed quiz on JavaScript fundamen
 
 ## Mock Up
 ![This is what my page looks like ](Assets/home.png)
-![ ](Assets/questions.png)
+<!-- ![ ](Assets/questions.png) -->
