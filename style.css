@@ -9,7 +9,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    color: rgb(48, 47, 47);
+    color:w
 }
 
 /* gives margin bottom */
@@ -22,7 +22,7 @@ h4 {
 
 /* styles font size, color and margin bottom */
 h1 {
-    font-size: 5.4rem;
+    font-size: 4rem;
     color: whitesmoke;
     margin-bottom: 5rem;
 }
@@ -30,31 +30,54 @@ h1 {
 /* */
 h1 > span {
     font-size: 2.4rem;
-    font-weight: 500;
+    /* font-weight: 300; */
 }
 
 /* applies font weight, size and margin bottom*/
 h2 {
     font-size: 4.2rem;
     margin-bottom: 4rem;
-    font-weight: 700;
+    font-weight: 150rem;
     color: whitesmoke;
 }
 
 /* styles header with size and weight */
 h3 {
     font-size: 2.8rem;
-    font-weight: 500;
+    color: whitesmoke;
+    margin-bottom: 2rem;
+}
+
+.landing {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    color: wheat;
+    font-size: 3rem;
+    font-weight: 75rem;
+    margin: auto;
+}
+
+.title {
+    margin-top: 5rem;
+    width: 75vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* */
 .container {
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 5rem;
 }
@@ -93,9 +116,9 @@ h3 {
 
 /* */
 .btn {
-font-size: 1.8rem;
+font-size: 1.5rem;
 padding: 1rem 0;
-width: 15rem;
+width: 12rem;
 text-align: center;
 border: 0.1rem solid rgb(110, 52, 52);
 border-radius: 10px;
