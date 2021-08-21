@@ -1,4 +1,5 @@
 const question = document.getElementById("question");
+const timerElement = document.getElementById("timercount");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const questionCounterText = document.getElementById("questionCounter");
 const scoreText = document.getElementById("score");
@@ -6,6 +7,8 @@ let currentQuestion = {};
 let correctAns = false;
 let score = 0;
 let questionCounter = 0;
+let timer;
+let timerCount;
 let availableQuestion = [];
 
 let questions = [
@@ -83,6 +86,8 @@ startGame = () => {
     availableQuestion = [...questions];
     console.log(availableQuestion);
     getNewQuestion();
+    timerCount = 50;
+    startTimer();
 };
 
 getNewQuestion = () => {
@@ -119,6 +124,8 @@ choices.forEach(choice => {
 
         if(classApply === "correct") {
             increaseScore(correctBonus);
+        } else {
+            timerCount -= 5;
         }
 
         selectedChoice.parentElement.classList.add(classApply);
@@ -132,6 +139,18 @@ choices.forEach(choice => {
 
     });
 });
+
+startTimer = () => {
+    timer = setInterval(function(){
+        timerCount--;
+        timerElement.textContent = timerCount;
+
+        if (timerCount <= 0) {
+            clearInterval(timer);
+            // endGame();
+        }
+    }, 1000);
+}
 
 increaseScore = num => {
     score += num;

@@ -8,6 +8,15 @@
     background-color: whitesmoke;
 }
 
+h1 {
+    color: rgb(209, 203, 216);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(234, 172, 139);
+}
+
 .choice-container:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgb(175, 137, 137);
@@ -44,4 +53,6 @@
 .hud-prefix {
     text-align: center;
     font-size: 2rem;
+    font-weight: bolder;
+    color: rgb(54, 33, 41);
 }

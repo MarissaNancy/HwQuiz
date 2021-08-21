@@ -6,7 +6,7 @@
 /* applies styling for text color, margin, padding */
 *{
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Noto Sans HK', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -21,8 +21,8 @@ h4 {
 
 /* styles font size, color and margin bottom */
 h1 {
-    font-size: 3.4rem;
-    color: rgb(58, 64, 66);
+    font-size: 3.8rem;
+    color: rgb(54, 33, 41);
     font-weight: 150rem;
 }
 
@@ -44,11 +44,12 @@ h3 {
     font-size: 2.8rem;
     color: white;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 main {
     height: 150px;
-    width: 80%;
+    width: 90%;
     background-image: url(./Assets/banner.png);
     background-size: cover;
     background-position: center;
@@ -69,14 +70,14 @@ main {
 }
 
 .info {
-    color: rgb(255, 255, 255);
+    color: rgb(234, 172, 139);
     font-size: 1.7rem;
     margin: auto;
 }
 
 li {
     margin-bottom: 1rem;
-    font-weight: 100rem;
+    font-weight: 300rem;
 }
 
 .title {
@@ -88,9 +89,16 @@ li {
     align-items: center;
 }
 
+.paragraph{
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: rgb(234, 172, 139);
+}
+
 /* */
 .container {
-    width: 100vw;
+    width: 90vw;
     height: 75vh;
     display: flex;
     justify-content: center;
@@ -102,7 +110,7 @@ li {
 
 /* */
 .container > * {
-    width: 100%;
+    width: 90%;
 }
 
 /* */
