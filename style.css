@@ -6,7 +6,7 @@
 /* applies styling for text color, margin, padding */
 *{
     box-sizing: border-box;
-    font-family:'Noto Sans HK', sans-serif;
+    font-family: 'Source Code Pro', monospace;
     margin: 0;
     padding: 0;
 }
@@ -22,7 +22,7 @@ h4 {
 /* styles font size, color and margin bottom */
 h1 {
     font-size: 3.8rem;
-    color: rgb(54, 33, 41);
+    color: rgb(88, 23, 23);
     font-weight: 150rem;
 }
 
@@ -50,9 +50,8 @@ h3 {
 main {
     height: 150px;
     width: 90%;
-    background-image: url(./Assets/banner.png);
-    background-size: cover;
-    background-position: center;
+    background: rgb(146, 107, 117);
+    border: solid .2rem rgb(253, 253, 253);
     margin: auto;
     border-radius: 7px;
 }
