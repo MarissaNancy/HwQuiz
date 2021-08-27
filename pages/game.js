@@ -77,7 +77,7 @@ let questions = [
     },
 ]
 
-const correctBonus = 10;
+const correctBonus = 100;
 const maxQuestions = 7;
 
 startGame = () => {
