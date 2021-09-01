@@ -21,7 +21,7 @@ As a coding boot camp student I want to take a timed quiz on JavaScript fundamen
 - CSS
 
 ## Usage
-> **To view my application**: Link Coming Soon [Link]()
+> **To view my application**: Visit [Link](https://marissanancy.github.io/HwQuiz/)
 
 ## Mock Up
 ![This is what my page looks like ](Assets/home.png)
