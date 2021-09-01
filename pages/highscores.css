@@ -5,7 +5,7 @@
 }
 
 .high-score {
-    font-size: 2.3rem;
+    font-size: 2.7rem;
     margin-bottom: 0.5rem;
     color: rgb(240, 198, 175);
 }
@@ -16,4 +16,6 @@
 
 h1 {
     font-size: 4.5rem;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
 }
